@@ -1,0 +1,5 @@
+h1. Toggle Feature Example
+
+I'll be using this as an example application to experiment with turning on features incrementally (per user and per groups of users)
+
+Initially looking at attempts with Setler and Rollout
