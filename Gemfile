@@ -5,6 +5,8 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'therubyracer', :require => 'v8'
 gem 'devise'
+gem 'rollout', '1.1.0'
+gem 'redis', '2.2.2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

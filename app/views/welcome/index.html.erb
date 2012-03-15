@@ -1,5 +1,7 @@
 <h1>Welcome</h1>
 <p>Hello <%= current_user.email %></p>
+<% if $rollout.active?(:achievements, current_user) %>
 <ul>Achievements</lu>
 
 </ul>
+<% end %>

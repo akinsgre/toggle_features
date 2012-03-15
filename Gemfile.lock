@@ -106,6 +106,8 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12)
       json (~> 1.4)
+    redis (2.2.2)
+    rollout (1.1.0)
     rspec (2.8.0)
       rspec-core (~> 2.8.0)
       rspec-expectations (~> 2.8.0)
@@ -156,6 +158,8 @@ DEPENDENCIES
   jquery-rails
   mocha
   rails (= 3.2.1)
+  redis (= 2.2.2)
+  rollout (= 1.1.0)
   rspec-rails
   sass-rails (~> 3.2.3)
   sqlite3
