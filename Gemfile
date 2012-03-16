@@ -25,8 +25,8 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'ZenTest', '4.6.2'
-  gem 'autotest-fsevent'
-  gem 'growl'
+  gem 'autotest-inotify'
+#  gem 'growl'
   gem 'factory_girl_rails'
   gem 'mocha'
 end

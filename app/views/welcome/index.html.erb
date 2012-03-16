@@ -2,6 +2,6 @@
 <p>Hello <%= current_user.email %></p>
 <% if $rollout.active?(:achievements, current_user) %>
 <ul>Achievements</lu>
-
+<%= render :partial => "achievement", :collection => @achievements %>
 </ul>
 <% end %>
