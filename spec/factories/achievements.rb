@@ -5,4 +5,10 @@ FactoryGirl.define do
     name "MyString"
     description "MyText"
   end
+
+  factory :code_achievement do
+    name "MyCode"
+    description "Best Code ever written"
+    type "CodeAchievement"
+  end
 end
