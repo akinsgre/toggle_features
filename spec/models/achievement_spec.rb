@@ -21,7 +21,9 @@ end
 
 describe CodeAchievement do
   before :each do
-    @codeAchievement = Factory(:code_achievement)
+    @codeAchievementDetail = Factory(:code_achievement_detail)
+    @codeAchievement = Factory(:code_achievement, :achievement_detail => @codeAchievementDetail)
+    
   end
 
   it "should be found" do
@@ -29,6 +31,15 @@ describe CodeAchievement do
   end
 
   it "should have a Detail" do
-    codeAchievement = CodeAchievement.new({:name => "Code1", :description => "Code Description"})
+    code = CodeAchievement.find(@codeAchievement.id)
+    code.achievement_detail.should_not be_nil
+
+    code.achievement_detail.destroy
+    code.save
+
+    code = CodeAchievement.find(@codeAchievement.id)
+    code.achievement_detail.should be_nil
+
+
   end
 end
